@@ -22,7 +22,7 @@ public interface MainContract {
 
 ## MVP with Fragment
 액티비티에서 프래그먼트를 뷰로 사용하는 형태.
-* 3번에서 뷰를 생성한 후 프레젠터에 attach 해주고 프레젠터의 attach 메서드 에서는 넘겨받은 뷰에 자신을 넘겨줌으로서 상호 참조형태가 된다.
+* 아래 소스코드 3.번에서 뷰를 생성한 후 프레젠터에 attach 해주고 프레젠터의 attach 메서드 에서는 넘겨받은 뷰에 자신을 넘겨줌으로서 상호 참조형태가 된다.
 ### Activity
 ```java
 public class MainActivity extends AppCompatActivity{
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity{
 }
 ```
 ### Presenter
-* 1 번에서 넘겨받은 뷰의 인터페이스를 호출하면서 자신을 넘겨주기 때문에 상호 참조형태로 서로간에 약속된 인터페이스를 사용할 수 있게 된다.
+* 아래 소스코드 1.번에서 넘겨받은 뷰의 인터페이스를 호출하면서 자신을 넘겨주기 때문에 상호 참조형태로 서로간에 약속된 인터페이스를 사용할 수 있게 된다.
 ```java
 public class MainPresenter implements MainContract.Presenter {
 
