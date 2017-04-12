@@ -83,7 +83,7 @@ public class MainPresenter implements MainContract.Presenter {
 ```
 
 ## MVP with Activity
-액티비티를 뷰로 사용하는 형태의 MVP 프래그먼트를 사용하는 예제와는 다르게 xml 에 값을 세팅하는 뷰 메서드들이 액티비티에 존재하게 된다
+액티비티를 뷰로 사용하는 형태의 MVP로 위의 프래그먼트를 사용하는 예제와는 다르게 xml 에 값을 세팅하는 뷰 메서드들이 액티비티에 존재하게 된다
 ```java
 public class TaskActivity extends AppCompatActivity implements TaskContract.View, View.OnClickListener{
 
