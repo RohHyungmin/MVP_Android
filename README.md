@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity{
 }
 ```
 ### Presenter
-* 1 번에서 넘겨받은 뷰의 인터페이스를 호출하면서 자신을 넘겨주기 때문에 상호 참조형태로 상대방의 약속된 인터페이스를 사용할 수 있게 된다.
+* 1 번에서 넘겨받은 뷰의 인터페이스를 호출하면서 자신을 넘겨주기 때문에 상호 참조형태로 서로간에 약속된 인터페이스를 사용할 수 있게 된다.
 ```java
 public class MainPresenter implements MainContract.Presenter {
 
